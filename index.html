@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"，user-scalable=no><!--移动端必须有这个-->
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Jack 王者空间</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Bootstrap -->
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+	<style type="text/css">
+		img{
+			width: 100%;
+		}
+	.damu-carousel{
+	    		margin-top: 50px;
+	    	}
+	    	.damu-carousel,.damu-carousel  .item{
+	    		height: 550px;
+	    		overflow: hidden;
+	    	}
+	    	.carousel-caption,{
+	    		bottom: 50%;
+	    	}
+	    	
+	    	@media only screen and (max-width: 768px) {
+	    		.carousel-caption{
+		    		bottom: 5%;
+		    	}
+		    	.damu-carousel,.damu-carousel  .item{
+		    		height: 200px;
+		    	}
+	    	}
+			
+			a{
+				display: block;
+				text-align: center;
+				color: gray;
+			}
+			.damu-fourD{
+				margin-top: 50px
+			}
+			.damu-hr{
+		    	margin: 50px auto;
+		    }
+		    .damu-hr > hr{
+		    	border:1px solid salmon;
+		    }
+	</style>
+  </head>
+  <body>
+	  <!-- 导航条 -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Jackhou的王者空间</a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">常用英雄<span class="sr-only">(current)</span></a></li>
+            <li><a href="#">英雄Tip</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">英雄特性<span class="caret"></span></a>
+              <ul class="dropdown-menu" id="damu-nav">
+                <li><a href="#luna">露娜</a></li>
+                <li><a href="#lanlingwang">兰陵王</a></li>
+                <li><a href="#yao">瑶瑶公主</a></li>
+                <li><a href="#shangguanwaner">上官婉儿</a></li>
+              <!--  <li role="separator" class="divider"></li>
+                <li><a href="#">上官婉儿</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li> -->
+				
+              </ul>
+            </li>
+			<li><a href="javascript:;" data-target="#myModal" data-toggle="modal">关于</a></li>
+          </ul>
+         <!-- <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form> -->
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://pvp.qq.com/">王者官网</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Jack链接<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://blog.csdn.net/Jackhou666666?spm=1000.2115.3001.5343">个人博客</a></li>
+                <li><a href="">Github开源</a></li>
+                <li><a href="#">Jack hou</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="http://www.hecheng118.top/">合成好室友游戏</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+	<!-- 轮播图 -->
+	<div id="carousel-example-generic" class="carousel slide damu-carousel" data-ride="carousel" data-interval="3000">
+	  <!-- Indicators -->
+	  <ol class="carousel-indicators">
+	    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	  </ol>
+	
+	  <!-- Wrapper for slides -->
+	  <div class="carousel-inner" role="listbox">
+	    <div class="item active">
+	      <img src="img/0.jpg" alt="">
+	      <div class="carousel-caption">
+	        ...
+	      </div>
+	    </div>
+	    <div class="item">
+	      <img src="img/1.jpg" alt="">
+	      <div class="carousel-caption">
+	        ...
+	      </div>
+	    </div>
+		<div class="item">
+		  <img src="img/2.jpg" alt="">
+		  <div class="carousel-caption">
+		    ...
+		  </div>
+		</div>
+	    ...
+	  </div>
+	
+	  <!-- Controls -->
+	  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+	    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+	</div>
+
+	<!--三列布局-->
+	<div class="container damu-fourD">
+	<div class="row">
+		  <div class="col-lg-3 col-md-4 col-sm-6 damu-thumbnail text-center">
+		      <img src="img/lunar.png" alt="露娜">
+		      <div class="caption">
+		        <h3>月光女神	 露娜</h3>
+		        <p>Tips：露娜的技能需要配合普攻才能多次刷新大招，提升露娜的攻击频率，提升支援gank的能力，刷新技能CD。</p>
+		        <p><a href="#" class="btn btn-primary" role="button">战士</a> <a href="https://pvp.qq.com/web201605/herodetail/146.shtml" class="btn btn-default" role="button">详细</a></p>
+		      </div>
+		  </div>
+		<div class="col-lg-3 col-md-4 col-sm-6 damu-thumbnail text-center">
+		  
+		     <img src="img/lanlingwang.jpeg" alt="兰陵王">
+		      <div class="caption">
+		        <h3>暗影刀锋  兰陵王</h3>
+		        <p>Tips：兰陵王是刺客，依赖技能短期高爆发，输出节奏为阶梯式；最大化收益属性就是破甲和物理伤害，移动。</p>
+		        <p><a href="#" class="btn btn-primary" role="button">刺客</a> <a href="https://pvp.qq.com/web201605/herodetail/153.shtml" class="btn btn-default" role="button">详细</a></p>
+		      </div>
+		    
+		  </div>
+		  <div class="col-lg-3 col-md-4 col-sm-6 damu-thumbnail text-center">
+		    
+		       <img src="img/yao.jpg" alt="瑶">
+		        <div class="caption">
+		          <h3>鹿灵守心  瑶瑶公主</h3>
+		          <p>Tips：瑶需要一定的最大生命属性来应对复杂的阵前形式，频繁刷新护盾，避免被流弹命中就需要退出战场的尴尬情况。</p>
+		          <p><a href="#" class="btn btn-primary" role="button">辅助</a> <a href="https://pvp.qq.com/web201605/herodetail/505.shtml" class="btn btn-default" role="button">详细</a></p>
+		        </div>
+		      
+		    </div>
+			<div class="col-lg-3 col-md-4 col-sm-6 damu-thumbnail text-center">
+			  
+			     <img src="img/shangguanwaner.jpg" alt="上官婉儿">
+			      <div class="caption">
+			        <h3>惊鸿之笔  上官婉儿</h3>
+			        <p>Tips：上官婉儿作为法刺的代表，时刻注意局势的走向，进行边路gank，灵活运用技能来解锁大招，打出爆炸AOE</p>
+			        <p><a href="#" class="btn btn-primary" role="button">法师</a> <a href="https://pvp.qq.com/web201605/herodetail/513.shtml" class="btn btn-default" role="button">详细</a></p>
+			      </div>
+			    
+			  </div>
+		</div>
+	</div>
+	
+	<!-- 分割线 -->
+  <div class="container damu-hr">
+    
+		<hr />
+    </div>
+
+	<!-- 标签页 -->
+	<div class="container" id="damu-tab">
+	  <!-- Nav tabs -->
+	  <ul class="nav nav-tabs" role="tablist" id="damu-list">
+	    <li role="presentation" class="active"><a href="#luna" aria-controls="luna" role="tab" data-toggle="tab">露娜</a></li>
+	    <li role="presentation"><a href="#lanlingwang" aria-controls="lanlingwang" role="tab" data-toggle="tab">兰陵王</a></li>
+	    <li role="presentation"><a href="#yao" aria-controls="yao" role="tab" data-toggle="tab">瑶瑶公主</a></li>
+	    <li role="presentation"><a href="#shangguanwaner" aria-controls="shangguanwaner" role="tab" data-toggle="tab">上官婉儿</a></li>
+	  </ul>
+	
+	  <!-- Tab panes -->
+	  <div class="tab-content">
+	    <div role="tabpanel" class="tab-pane active" id="luna">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-7 ">
+						<h3>月光女神	 露娜</h3>
+						<h4>Tips：露娜的技能需要配合普攻才能多次刷新大招，提升露娜的攻击频率，提升支援gank的能力，刷新技能CD。</h4>
+					</div>
+					<div class="col-md-5">
+						<img src="img/lunar.png">
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	    <div role="tabpanel" class="tab-pane" id="lanlingwang">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-7 ">
+						<h3>暗影刀锋  兰陵王</h3>
+						<h4>Tips：兰陵王是刺客，依赖技能短期高爆发，输出节奏为阶梯式；最大化收益属性就是破甲和物理伤害，移动。</h4>
+					</div>
+					<div class="col-md-5">
+						<img src="img/lanlingwang.jpeg">
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	    <div role="tabpanel" class="tab-pane" id="yao">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-7 ">
+						<h3>鹿灵守心  瑶瑶公主</h3>
+						<h4>Tips：瑶需要一定的最大生命属性来应对复杂的阵前形式，频繁刷新护盾，避免被流弹命中就需要退出战场的尴尬情况。</h4>
+					</div>
+					<div class="col-md-5">
+						<img src="img/yao.jpg">
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	    <div role="tabpanel" class="tab-pane" id="shangguanwaner">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-7 ">
+						<h3>惊鸿之笔  上官婉儿</h3>
+						<h4>Tips：上官婉儿作为法刺的代表，时刻注意局势的走向，进行边路gank，灵活运用技能来解锁大招，打出爆炸AOE</h4>
+					</div>
+					<div class="col-md-5">
+						<img src="img/shangguanwaner.jpg">
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	  </div>
+	
+	  </div>
+	  
+	<!-- 版权 -->
+	    <div class="container">
+	    		&copy;Jack hou
+	    </div>
+	
+	<!-- 模态框 -->
+      <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Modal title</h4>
+            </div>
+            <div class="modal-body">
+              <p>Author：Jack hou</br>
+			  Date：2021.06.10</br>
+			   Github：&hellip;</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+             <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+	</div>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>	
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<!--    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script> -->
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script> -->
+  </body>
+  <script type="text/javascript">
+    	$(function(){
+    		//1.链式调用  2.读写二合一  3.隐式迭代  4.编码函数化
+    		$('.carousel').carousel({
+  			  interval: 2000,
+  			  pause:null,   //暂停
+  			  wrap:true    //无缝衔接
+  			})
+    		
+    		$('#test').click(function(){
+    			$('.carousel').carousel('cycle');
+    		})
+    		$('#test2').click(function(){
+    			$('.carousel').carousel('pause')
+    		})
+
+			$("#damu-nav > li > a").click(function(e){
+			  	var href = $(this).attr("href");
+			  	console.log("#damu-list > li > a[href="+(href)+"]");
+			  	$("#damu-list > li > a[href="+(href)+"]").tab('show');
+			  	$(document).scrollTop($("#damu-tab").offset().top);
+			  	e.preventDefault();
+			  })
+		})
+	</script>
+</html>
